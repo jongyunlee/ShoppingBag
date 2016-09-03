@@ -1,4 +1,5 @@
-* Test Driven Development (TDD)
+# Test Driven Development (TDD)
+
 
 > 테스트를 염두해 두고 설계하라 - 실용주의 프로그래며 Tip 48
 
@@ -8,7 +9,7 @@
 
 앞으로 테스트 없이는 코딩도 안할라구 ㅋㅋ
 
-**** Sails.js에서의 Test
+#### Sails.js에서의 Test
 
 - mocha라는 모듈을 이용해 테스트
 
@@ -66,7 +67,8 @@ after(function(done) {
 --timeout 5s
 ```
 
-```
+
+```javascript
 describe('UserModel', function() {
     describe('#find()', function() {
 	it('should check find function', function(done) {
@@ -80,11 +82,18 @@ describe('UserModel', function() {
     })
 });
 ```
-- `package.json`
-```
+
+
+
+- package.json
+
+
+```json
   "scripts": {
     "start": "node app.js",
     "debug": "node debug app.js",
     "test": "node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/integration/**/*.test.js"
   }
 ```
+
+`npm test` 로 test 시작
