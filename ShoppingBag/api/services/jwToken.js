@@ -6,7 +6,7 @@ module.exports.issue = function(payload) {
 	payload,
 	tokenSecret,
 	{
-	    expiresInMinutes: 180
+	    // expiresInMinutes: 180
 	}
     );
 };

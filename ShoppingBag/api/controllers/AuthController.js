@@ -18,14 +18,15 @@ module.exports = {
 	    if ((err) || (!user)) {
 		return res.send({
 		    message: info.message,
-		    user: user
+		    email: user.email
 		});
 	    }
 	    req.login(user, function(err) {
 		if (err) res.send(err);
 		return res.send({
 		    message: info.message,
-		    user: user
+		    email: user.email,
+		    token: jwToken.issue({id: user.id})
 		});
 	    });
 	})(req, res);
@@ -54,7 +55,8 @@ module.exports = {
 	    }
 	    return res.json(200, {
 		status: 200,
-		email: user.email
+		email: user.email,
+		token: jwToken.issue({id: user.id})
 	    })
 	})
     }
