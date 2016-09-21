@@ -1,19 +1,20 @@
 {
-    "name": "generator-sailsapp",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-	"yeoman-generator": "^0.24.1"
-    },
-    "files": [
-	"app",
-	"router"
-    ]
+  "name": "generator-sailsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yeoman-generator": "^0.24.1",
+    "yosay": "^1.2.0"
+  },
+  "files": [
+    "app",
+    "router"
+  ]
 }
